@@ -1,5 +1,6 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
+import HotDogOrPizzaSection from "./HotDogOrPizzaSection";
 
 const SimpleForm = props => {
     const { handleSubmit, pristine, reset, submitting } = props;
@@ -39,17 +40,7 @@ const SimpleForm = props => {
                 </div>
             </div>
             <div>
-                <label>Hot dog or Pizza?</label>
-                <div>
-                    <div>
-                        <label id="hotdog-or-pizza_hotdog-input-label">Hotdog</label>
-                        <Field name="hotdog-or-pizza" component="input" type="radio" value="hotdog" aria-labelledby="hotdog-or-pizza_hotdog-input-label" />
-                    </div>
-                    <div>
-                        <label id="hotdog-or-pizza_pizza-input-label">Pizza</label>
-                        <Field name="hotdog-or-pizza" component="input" type="radio" value="pizza" aria-labelledby="hotdog-or-pizza_pizza-input-label" />
-                    </div>
-                </div>
+                <HotDogOrPizzaSection />
             </div>
             <div>
                 <label>Favorite Color</label>
