@@ -24,15 +24,15 @@ describe('SimpleForm', () => {
             </Provider>
         )
 
-        const maleInput = screen.getByLabelText('Male')
-        const femaleInput = screen.getByLabelText('Female')
+        const hotdogInput = screen.getByLabelText('Hotdog')
+        const pizzaInput = screen.getByLabelText('Pizza')
 
-        userEvent.click(maleInput)
-        expect(maleInput).toBeChecked()
-        expect(femaleInput).not.toBeChecked()
+        userEvent.click(hotdogInput)
+        expect(hotdogInput).toBeChecked()
+        expect(pizzaInput).not.toBeChecked()
 
-        userEvent.click(femaleInput)
-        expect(maleInput).not.toBeChecked()
-        expect(femaleInput).toBeChecked()
+        userEvent.click(pizzaInput)
+        expect(hotdogInput).not.toBeChecked()
+        expect(pizzaInput).toBeChecked()
     })
 })

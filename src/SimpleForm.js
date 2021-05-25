@@ -39,15 +39,15 @@ const SimpleForm = props => {
                 </div>
             </div>
             <div>
-                <label>Sex</label>
+                <label>Hot dog or Pizza?</label>
                 <div>
                     <div>
-                        <label id="sex_male-input-label">Male</label>
-                        <Field name="sex" component="input" type="radio" value="male" aria-labelledby="sex_male-input-label" />
+                        <label id="hotdog-or-pizza_hotdog-input-label">Hotdog</label>
+                        <Field name="hotdog-or-pizza" component="input" type="radio" value="hotdog" aria-labelledby="hotdog-or-pizza_hotdog-input-label" />
                     </div>
                     <div>
-                        <label id="sex_female-input-label">Female</label>
-                        <Field name="sex" component="input" type="radio" value="female" aria-labelledby="sex_female-input-label" />
+                        <label id="hotdog-or-pizza_pizza-input-label">Pizza</label>
+                        <Field name="hotdog-or-pizza" component="input" type="radio" value="pizza" aria-labelledby="hotdog-or-pizza_pizza-input-label" />
                     </div>
                 </div>
             </div>
