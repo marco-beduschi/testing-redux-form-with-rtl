@@ -17,7 +17,7 @@ describe('SimpleForm', () => {
         expect(screen.getByPlaceholderText('First Name')).toBeInTheDocument()
     });
 
-    test("toggles different 'sex' options", () => {
+    test("toggles different 'hot dog or pizza' options", () => {
         render(
             <Provider store={store}>
                 <SimpleForm />
