@@ -41,16 +41,14 @@ const SimpleForm = props => {
             <div>
                 <label>Sex</label>
                 <div>
-                    <label>
-                        <Field name="sex" component="input" type="radio" value="male" />
-                        {' '}
-                        Male
-                    </label>
-                    <label>
-                        <Field name="sex" component="input" type="radio" value="female" />
-                        {' '}
-                        Female
-                    </label>
+                    <div>
+                        <label id="sex_male-input-label">Male</label>
+                        <Field name="sex" component="input" type="radio" value="male" aria-labelledby="sex_male-input-label" />
+                    </div>
+                    <div>
+                        <label id="sex_female-input-label">Female</label>
+                        <Field name="sex" component="input" type="radio" value="female" aria-labelledby="sex_female-input-label" />
+                    </div>
                 </div>
             </div>
             <div>
