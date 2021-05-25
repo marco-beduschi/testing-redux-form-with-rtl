@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import SimpleForm from './SimpleForm';
+import SimpleForm from './index';
 import { Provider } from "react-redux";
-import store from "./store";
+import store from "../store";
 import userEvent from '@testing-library/user-event'
 
 
